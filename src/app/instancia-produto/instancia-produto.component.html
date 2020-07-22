@@ -1,5 +1,4 @@
 <div class="instancia-produto">
-
     <div class='line'>
         <select>
             <option *ngFor='let produto of produtos'>{{ produto }}</option>
@@ -7,20 +6,12 @@
         <input id="produto" type="text">
     </div>
     <div class='line'>
-        <label for="codBarras">Codigo de Barras</label>
-        <input id="codBarras" type="text">
+        <label for="dataEntrada">Data Entrada</label>
+        <input id="dataEntrada" type="text">
     </div>
     <div class='line'>
-        <label for="qtd">Quantidade</label>
-        <input id="qtd" value="1" type="number" placeholder="1">
-    </div>
-    <div class='line'>
-        <label for="um">Unidade de Medida</label>
-        <input id="um" type="text">
-    </div>
-    <div class='line'>
-        <label for="obs">Observação</label>
-        <input id="obs" type="text">
+        <label for="dataValidade">Data Validade</label>
+        <input id="dataValidade" type='data'>
     </div>
     <div class='line'>
         <button>Cadastrar</button>
