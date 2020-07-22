@@ -1,0 +1,51 @@
+.tipo-produto{
+    /*Variaveis*/
+    --background-base:rgb(255, 255, 255);
+    --background-select:rgb(105, 117, 117);
+    --background-active:rgb(151, 172, 172);
+    --text-select:rgb(0, 255, 221);
+    --text-active:rgb(255, 255, 255);
+
+    /*Propriedades*/
+    margin:0;
+    padding:15px 15px 15px 15px;
+    box-shadow:1px 1px 5px var(--background-select);
+    display:block;
+    background-color:var(--background-base);
+}
+.line{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+.line>label{
+    flex-basis:150px;
+}
+.line>input{
+    border-radius:2px;
+    margin-bottom:2px;
+    background-color:var(--background-base);
+    border-width:0 0 1px 0;
+    outline-style:none;
+    flex-grow:5;
+}
+.line>input:focus{
+    border-color:var(--text-select);
+}
+label::after{
+    content:':';
+}
+button{
+    margin-top:15px ;
+    outline-style:none;
+    border-style:none;
+    flex-grow:1;
+}
+button:hover{
+    background-color:var(--background-select);
+    color:var(--text-select);
+}
+button:active{
+    background-color:var(--background-active);
+    color:var(--text-active);
+}
