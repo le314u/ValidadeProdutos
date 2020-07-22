@@ -1,0 +1,9 @@
+<div class="lista-classe">
+    <div class="classe-produto" *ngFor="let classe of classes">
+        <p>Nome: {{ classe.nome }}</p>
+        <p>Cod: {{ classe.cod }}</p>
+        <p>Quantidade: {{ classe.qtd }}{{ classe.um }}</p>
+        <button type="button">Ver todos itens </button>
+        <app-produto></app-produto>
+    </div>
+</div>
