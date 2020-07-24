@@ -1,24 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { CadastroModule } from './cadastro/cadastro.module'
+import { ListaModule } from './lista/lista.module';
 import { AppComponent } from './app.component';
-import { TipoProdutoComponent } from './tipo-produto/tipo-produto.component';
-import { InstanciaProdutoComponent } from './instancia-produto/instancia-produto.component';
-import { ListaProdutoComponent } from './lista-produto/lista-produto.component';
-import { ClasseProdutoComponent } from './lista-produto/classe-produto/classe-produto.component';
-import { ProdutoComponent } from './lista-produto/produto/produto.component';
+import { ShowDirective } from './shared/diretivas/show.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TipoProdutoComponent,
-    InstanciaProdutoComponent,
-    ListaProdutoComponent,
-    ClasseProdutoComponent,
-    ProdutoComponent
+    ShowDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CadastroModule,
+    ListaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,7 @@
+<div class="lista-classe-produto">
+    <p>Nome: {{ nome }}</p>
+    <p>Cod: {{ cod }}</p>
+    <p>Quantidade: {{ qtd }}{{ um }}</p>
+    <button (click)='onClick()' type="button">Ver todos itens </button>
+    <lista-instancia-produto show='grid.value' *ngIf="click"></lista-instancia-produto>
+</div>

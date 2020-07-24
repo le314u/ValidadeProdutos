@@ -1,4 +1,4 @@
-.lista-classe{
+.lista-classe-produto{
     /*Variaveis*/
     --background-base:rgb(255, 255, 255);
     --background-select:rgb(105, 117, 117);
@@ -8,17 +8,6 @@
     --text-active:rgb(255, 255, 255);
 
     /*Propriedades*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    overflow-x:auto;
-    margin:10px 0;
-    padding:15px 15px 15px 15px;
-    box-shadow:1px 1px 5px var(--background-select);
-    background-color:var(--background-base);
-}
-.classe-produto{
     background-color:var(--background-2layer);
     margin:15px;
     padding: 15px;
@@ -29,10 +18,10 @@
     flex-direction: column;
     display:flex;
 }
-.classe-produto>p{
+.lista-classe-produto>p{
     margin: 5px;
 }
-.classe-produto>button{
+.lista-classe-produto>button{
     flex-grow: 1;
     padding: 0;
     margin: 5px;
@@ -40,11 +29,11 @@
     outline-style: none;
     border-style: none;
 }
-.classe-produto>button:hover{
+.lista-classe-produto>button:hover{
     background-color: var(--background-select);
     color:var(--text-select)
 }
-.classe-produto>button:active{
+.lista-classe-produto>button:active{
     background-color: var(--background-active);
     color:var(--text-active)
 }
