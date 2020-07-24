@@ -1,5 +1,5 @@
 <div>
-    <div class="item" *ngFor="let produto of produtos">
+    <div (click)="onClickInstancia(produto)" class="item" *ngFor="let produto of produtos">
         <p>Comprado em: {{ produto.entrada }}</p>
         <p>Valido até: {{ produto.validade }}</p>
         <p>Durando: {{ produto.duracao }}</p>

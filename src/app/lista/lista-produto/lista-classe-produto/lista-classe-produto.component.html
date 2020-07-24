@@ -2,6 +2,6 @@
     <p>Nome: {{ classe.nome }}</p>
     <p>Cod: {{ classe.cod }}</p>
     <p>Quantidade: {{ classe.qtd }}{{ classe.um }}</p>
-    <button (click)='onClick()' type="button">Ver todos itens </button>
-    <lista-instancia-produto show *ngIf="click" [instancias]='instancias'></lista-instancia-produto>
+    <button (click)='onClick();' type="button">Ver todos itens </button>
+    <lista-instancia-produto (upInstancia)="onInstancia($event)" *ngIf="visible" [instancias]='instancias'></lista-instancia-produto>
 </div>

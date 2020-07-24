@@ -1,5 +1,5 @@
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { IInstanciaProduto } from './../../../type/IInstanciaProduto';
-import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'lista-instancia-produto',
@@ -8,6 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ListaInstanciaProdutoComponent implements OnInit {
   @Input('instancias') produtos:IInstanciaProduto;
+  @Output('upInstancia') upInstancia = new EventEmitter();
+
+  onClickInstancia(produto){
+    this.upInstancia.emit(produto)
+  }
+
   constructor() { }
 
   ngOnInit(): void {

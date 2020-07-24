@@ -1,5 +1,5 @@
 <div class="lista-produto">
     <div *ngFor='let classe of classes'>
-        <lista-classe-produto  [classe_produto]='classe' ></lista-classe-produto>
+        <lista-classe-produto  #lista [classeProduto]='classe' (upResize)='swapWidthPage($event,lista)' ></lista-classe-produto>
     </div>
 </div>
