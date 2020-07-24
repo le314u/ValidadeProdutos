@@ -1,3 +1,5 @@
 <div class="lista-produto">
-    <lista-classe-produto *ngFor='let classe of classes'></lista-classe-produto>
+    <div *ngFor='let classe of classes'>
+        <lista-classe-produto  [classe_produto]='classe' ></lista-classe-produto>
+    </div>
 </div>

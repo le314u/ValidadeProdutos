@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { IInstanciaProduto } from './../../../type/IInstanciaProduto';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'lista-instancia-produto',
@@ -6,18 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-instancia-produto.component.css']
 })
 export class ListaInstanciaProdutoComponent implements OnInit {
-
-  produtos=[
-    {
-      entrada:'02/04/2020',
-      validade:'03/05/2020',
-      duracao:'31dias'
-    },{
-      entrada:'05/04/2020',
-      validade:'06/05/2020',
-      duracao:'31dias'
-    }
-  ]
+  @Input('instancias') produtos:IInstanciaProduto;
   constructor() { }
 
   ngOnInit(): void {

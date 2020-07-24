@@ -1,19 +1,24 @@
+import { IProduto } from './../../type/IProduto';
 import { Component, OnInit } from '@angular/core';
+import { ProdutoService } from '../produto.service'
 
 @Component({
   selector: 'lista-produto',
   templateUrl: './lista-produto.component.html',
   styleUrls: ['./lista-produto.component.css']
 })
+
 export class ListaProdutoComponent implements OnInit {
 
-  classes = [
-    1,2,3,4,5
-  ]
+  produtoService:ProdutoService;
+  classes:IProduto[];
 
-  constructor() { }
+  constructor(_produtoService: ProdutoService) { 
+    this.produtoService = _produtoService
+  }
 
   ngOnInit(): void {
+    this.classes = this.produtoService.getClasses()
   }
 
 }

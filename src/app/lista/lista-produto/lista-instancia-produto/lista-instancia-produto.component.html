@@ -1,5 +1,7 @@
-<div class="item" *ngFor="let produto of produtos">
-    <p>Comprado em: {{ produto.entrada }}</p>
-    <p>Valido até: {{ produto.validade }}</p>
-    <p>Durando: {{ produto.duracao }}</p>
+<div>
+    <div class="item" *ngFor="let produto of produtos">
+        <p>Comprado em: {{ produto.entrada }}</p>
+        <p>Valido até: {{ produto.validade }}</p>
+        <p>Durando: {{ produto.duracao }}</p>
+    </div>
 </div>
